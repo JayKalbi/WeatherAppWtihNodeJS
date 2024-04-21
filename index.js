@@ -21,7 +21,7 @@ const replaceVal = (tempVal, orgVal) => {
 
 const server = http.createServer((req,res)=> {
     if(req.url == "/") {
-        requests("https://api.openweathermap.org/data/2.5/weather?q=Anand&APPID=b9516f0facbd229498b4cacf831acfb3")
+        requests("")  // Add your API link here
         .on('data',  (chunk) => {
             const objData = JSON.parse(chunk);
             const arrData = [objData];
